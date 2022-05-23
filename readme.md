@@ -53,6 +53,11 @@ React is a JavaScript library for building User Interfaces.
 - you can assign a JSX element to a variable
 - you can return a JSX element from a function
 - Use self-closing syntax for self-closing elements in JSX
+- Comments in JSX use the following syntax: {/_comment_/}
+- When returning nothing from a component, make sure to return null;
+- Conditional rendering allows you to return different Elements based on props (or other conditions).
+- Spreading attributes in JSX allows you to take all the props (or a portion of the props) and pass them down to the element being rendered without having to write all the props one by one.
+- Spreading attributes is mostly used when building UI Kits.
 
 ## JSX Expressions
 
@@ -82,3 +87,14 @@ React is a JavaScript library for building User Interfaces.
 - React Components promote code reuse and are easier to debug.
 - A React Component's name has to start with an uppercase.
 - Use UpperCamelCase when naming React Components
+- The first part of a JSX tag determines the type of the React element.
+- Capitalized types indicate that the JSX tag is referring to a React component.
+- A React Component is a function that returns a React Element.
+- Define one component per file for easier maintenance.
+- Make the name of the file match the name of the Component.
+
+## clsx
+
+- clsx is a tiny utility for constructing className strings conditionally.
+- You can install clsx with npm install clsx
+- clsx({"your-class-name": booleanValue}) is the generic syntax for clsx.
