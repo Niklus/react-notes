@@ -58,7 +58,7 @@ React is a JavaScript library for building User Interfaces.
 
 - An expression is any valid JavaScript code that resolves to a value
 - Expressions in JSX need to be wrapped inside curly braces: {expression}
-- {2 + 3} is an example of JSX with an expression.
+- {2 + 3} is an example an expression.
 - If the value of the attribute is a string, then wrap it with quotes
 - If the value of the attribute is an expression, then wrap it with curly braces {}
 - Number and boolean attribute values should be passed as an expression
