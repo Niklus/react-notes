@@ -121,7 +121,7 @@ React is a JavaScript library for building User Interfaces.
 
 ## Events
 
-- onClick should only be used on <button> elements for better accessibility.
+- onClick should only be used on button elements for better accessibility.
 - onEventName is the general syntax for adding events to an element.
 - onKeyDown attaches the keydown event to an element.
 - Moving from inline to named event handlers allows for more complexity inside the event handler.
