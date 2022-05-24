@@ -118,3 +118,12 @@ React is a JavaScript library for building User Interfaces.
 - The default value of the state variable returned by useState will be the same as the initial_value passed to useState().
 - When you change the state, React will call the Component function again to re-render
 - The initial_value passed to useState(initial_value) is only used the first time a Component renders.
+
+## Events
+
+- onClick should only be used on <button> elements for better accessibility.
+- onEventName is the general syntax for adding events to an element.
+- onKeyDown attaches the keydown event to an element.
+- Moving from inline to named event handlers allows for more complexity inside the event handler.
+- Use the handleSubjectEvent naming convention for event handlers
+- When event handlers are defined inside the Component, they can use the state variables because of the closures concept.
