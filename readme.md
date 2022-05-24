@@ -98,3 +98,23 @@ React is a JavaScript library for building User Interfaces.
 - clsx is a tiny utility for constructing className strings conditionally.
 - You can install clsx with npm install clsx
 - clsx({"your-class-name": booleanValue}) is the generic syntax for clsx.
+
+## State
+
+- State refers to any variable defined inside a Component with the intent to update later on.
+- State variables can be updated from inside the Component.
+- When a state variable is updated, the Component automatically re-renders
+- useState allows us to create a state variable in a Component
+- useState is a named export that needs to be imported
+- You can import useState and React: import React, {useState} from "react";
+- useState is one of many React Hooks.
+
+## useState hook
+
+- useState is a React Hook that hooks into the internals of React and notifies it that a state variable has changed.
+- The useState() function takes the initial_value as the only argument.
+- The useState() function returns an array of 2 items
+- Always destructure the useState into abc and setAbc where abc is the name of the state
+- The default value of the state variable returned by useState will be the same as the initial_value passed to useState().
+- When you change the state, React will call the Component function again to re-render
+- The initial_value passed to useState(initial_value) is only used the first time a Component renders.
