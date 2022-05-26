@@ -46,7 +46,7 @@ React is a JavaScript library for building User Interfaces.
 - JSX is not part of your browser. You need a tool to transform it to valid JavaScript.
 - JSX requires React to be in scope.
 - Attributes in JSX get passed as the 2nd argument of React.createElement(...)
-- <div className="active"></div> is how you would give the class active to this element.
+- className="active" is how you would give the class active to an element.
 - You need quotes around attribute values that are strings.
 - A JSX element is an object
 - you can treat a JSX element like an object
@@ -127,3 +127,11 @@ React is a JavaScript library for building User Interfaces.
 - Moving from inline to named event handlers allows for more complexity inside the event handler.
 - Use the handleSubjectEvent naming convention for event handlers
 - When event handlers are defined inside the Component, they can use the state variables because of the closures concept.
+
+## Conditional Rendering
+
+- A Component can render different Components based on a specific condition.
+- You can use the ternary operator as a shorter way to perform if conditions in JSX
+- Always strive for writing readable code rather than writing the shortest possible code.
+- The logical && operator is a JavaScript feature that allows chaining 2 expressions. The 2nd expression will only execute if the first one returns true.
+- Using the logical && operator in JSX makes it easier to conditionally render elements or components.
