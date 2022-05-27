@@ -135,3 +135,23 @@ React is a JavaScript library for building User Interfaces.
 - Always strive for writing readable code rather than writing the shortest possible code.
 - The logical && operator is a JavaScript feature that allows chaining 2 expressions. The 2nd expression will only execute if the first one returns true.
 - Using the logical && operator in JSX makes it easier to conditionally render elements or components.
+
+## The Map Function
+
+- .map can be used inside JSX to loop through arrays
+- Whenever you iterate with .map in JSX, you need to provide a key.
+- The key should be unique. As a last resort, you can use the index of the map iteration (which is the 2nd argument)
+- The key allows React to efficiently update the DOM with the least amount of operations.
+
+## React Forms
+
+- Setting a value on an input without an onChange handler will create a read-only input.
+- If you want to provide a default value, then use the defaultValue attribute.
+- onChange on an input will fire every time the user makes a change to that textbox.
+- You can read the user's text with event.target.value.
+- A controlled component is when you keep track of an input's value as state and update it whenever it changes.
+- To make an input controlled, you have to assign its value to a state variable and update that state variable whenever the input changes.
+- Controlled component is a combination of value={state} and onChange={event => setState(event.target.value)}
+- You can make "select" and "textarea" controlled just like you would for the input element
+- Every input needs its own state variable.
+- You can prevent the form from submitting with an onSubmit handler on the form that calls event.preventDefault().
