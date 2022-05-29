@@ -152,6 +152,9 @@ React is a JavaScript library for building User Interfaces.
 - A controlled component is when you keep track of an input's value as state and update it whenever it changes.
 - To make an input controlled, you have to assign its value to a state variable and update that state variable whenever the input changes.
 - Controlled component is a combination of value={state} and onChange={event => setState(event.target.value)}
-- You can make "select" and "textarea" controlled just like you would for the input element
+- You can make select and textarea controlled just like you would for the input
 - Every input needs its own state variable.
 - You can prevent the form from submitting with an onSubmit handler on the form that calls event.preventDefault().
+- Expecting users to submit a form? Implement the onSubmit on the form instead of a click on a button.
+- Add label to every input/textarea/select element.
+- A label needs an htmlFor attribute that points to the ID of the element.
